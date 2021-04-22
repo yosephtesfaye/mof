@@ -1,0 +1,180 @@
+body{
+	background:#f4f4f4;
+	margin-top:90px;
+}
+
+
+.navbarSupportedContent .navbar-nav .nav-link {
+    color: red;
+    
+}
+.navbarSupportedContent .nav-item.active .nav-link,
+.navbarSupportedContent  .nav-item:hover .nav-link {
+    color: #ffffff;
+    
+}
+/* the following is to increase the navbar header size*/
+.navbar {
+  min-height: 80px !important;
+
+  
+}
+
+
+.navbar-nav{
+	 
+	 font-size: 20px !important;
+	
+	 
+}
+
+/* the following style is to make header position fixed, but not working for now */
+.navbar  .navbar-expand-md .navbar-dark .bg-dark{
+	position:fixed;
+}
+/*the following style is to change color of clickable button to #0c11a1 when clicked */
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+  color: #fff;
+  background-color: #0c11a1;
+}
+
+
+.nav-item a:hover {
+	        background-color:#FF0000;
+            color: white !important;
+            cursor: pointer;
+        }
+        /*the following two line of css code  is to make dropdownmenu on hover down with out clicking the button*/
+      .dropdown:hover>.dropdown-menu{
+      display:block;
+      }
+      .fa-angle-right{
+	float:right;
+}
+ .container .fa{
+	margin-right:8px;
+}
+
+/* nav is here */
+#sideNav{
+	width:250px;
+	height:100vh;
+	position:fixed;
+	right:-250px;
+	top:0;
+	background:teal;
+	z-index:2;
+	transition: .5s;
+}
+nav ul li{
+	list-style:none;
+	margin:50px 20px;
+}
+nav ul li a{
+	text-decoration:none;
+	color:#fff;
+}
+#menuBtn{
+	width:50px;
+	position:fixed;
+	right:30px;
+	top:35px;
+	z-index:2;
+	cursor:pointer;
+}
+
+
+.error {
+    color: red;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+#footer{
+	background:#333333;
+	color:#ffffff;
+	text-align:center;
+	padding:10px;
+	height: 30px;
+	
+	
+	
+}
+
+
+/* On screens that are 992px or less, set the background color to #2E9AFE */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: #2E9AFE;
+    
+    
+  }
+  
+  
+}
+
+/* On screens that are 600px or less, set the background color to teal */
+@media screen and (max-width: 600px) {
+  body {
+    background-color:teal;
+  }
+  
+}
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+ /* The navbar container */
+.nav-item {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.nav-item a {
+  float: center;
+  display: block;
+  color: dark;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width:50%;
+}
+  
+}
+
+
+
+
+
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .nav-item a {
+    float: none;
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
