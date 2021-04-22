@@ -9,7 +9,7 @@ import javax.persistence.ManyToOne;
 public class PenaltyRule {
 	
 	@Id
-	private String penalty_id;
+	private Long  penalty_id;
 	
 	
 	@ManyToOne
@@ -29,11 +29,11 @@ public class PenaltyRule {
 	
 	private String letter_template;
 
-	public String getPenalty_id() {
+	public Long getPenalty_id() {
 		return penalty_id;
 	}
 
-	public void setPenalty_id(String penalty_id) {
+	public void setPenalty_id(Long penalty_id) {
 		this.penalty_id = penalty_id;
 	}
 
