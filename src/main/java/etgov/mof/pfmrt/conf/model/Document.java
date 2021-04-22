@@ -38,6 +38,8 @@ import lombok.NoArgsConstructor;
 	private String director_name;
 	
 	
+	@OneToMany(mappedBy="document")
+	private List<PenaltyRule> penaltyrules;
 	
 	public Directorate getDirectorate() {
 		return directorate;
