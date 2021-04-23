@@ -79,8 +79,10 @@ public class UserRegisterController {
 	 * if (result.hasErrors()) { return "redirect:/login"; }
 	 * 
 	 * return "login"; }
-	 */	 
-	 
+	 */	
+	
+	
+	//used to get list of users from database;
 	@GetMapping("/userlist")
 	public String userList(Model model,User user) {
 		

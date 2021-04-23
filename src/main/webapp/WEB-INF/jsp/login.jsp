@@ -59,7 +59,7 @@
 </head>
 <body style="background-color:teal" >
 <div class="login-form" style="margin-top:100px;">
-    <form action="/login" method="POST">
+    <form action="/login" method="POST" >
         <h4 class="text-center">EMCP System</h4>   
         <div class="form-group ${error != null ? 'has-error' : ''}" >
         <span  style="color:white;" >${error}</span>

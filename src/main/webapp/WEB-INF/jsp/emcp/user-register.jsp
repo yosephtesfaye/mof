@@ -153,7 +153,7 @@
 			    <select class="form-control" id="orgid" name="org_id"  >
 			       <option>--SELECT--</option>
 			     	 <c:forEach items="${organizations}" var="course">
-				      <option value="${course.id}">${course.orgname}
+				      <option value="${course.org_id}">${course.org_name}
 				   </option>
 				   </c:forEach>
 				   
@@ -310,7 +310,7 @@
 			    <select class="form-control" id="orgIdEdit" name="org_id"  >
 			       <option>--SELECT--</option>
 			     	 <c:forEach items="${organizations}" var="course">
-				      <option value="${course.id}">${course.orgname}
+				      <option value="${course.org_id}">${course.org_name}
 				   </option>
 				   </c:forEach>
 				   

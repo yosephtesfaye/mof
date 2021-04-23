@@ -15,18 +15,19 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig  extends  WebSecurityConfigurerAdapter{
-	
+	String[] resources = new String[]{
+            "/include/**","/css/**","/icons/**","/img/**","/js/**","/layer/**"
+    };
 	
 	@Override
     protected void configure(HttpSecurity http) throws Exception {
     	http
         .authorizeRequests()
-        //.antMatchers(resources).permitAll()  
+        .antMatchers(resources).permitAll()  
         .antMatchers("/login").permitAll() 
         
         
         .antMatchers("/login").access("hasRole('ADMIN')")
-        
         .antMatchers("/login").access("hasRole('AUDIT')")
         .antMatchers("/login").access("hasRole('USER')")
         

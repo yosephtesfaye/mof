@@ -35,6 +35,10 @@ public class User implements Serializable{
 
 	/**
 	 * 
+	 * serialversionUID is used to version serialized data 
+	 * Serialization is a mechanism of converting the state of an object into byte stream
+	 * advantage of serialization is used to save and persist state of an object 
+	 * the other advantage is to travel an object across the network  
 	 */
 	private static final long serialVersionUID = 1671417246199538663L;
 
