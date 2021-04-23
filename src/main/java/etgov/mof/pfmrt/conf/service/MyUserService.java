@@ -1,22 +1,24 @@
-package etgov.mof.pfmrt.conf.service;
+//package etgov.mof.pfmrt.conf.service
+/*
+import java.util.List;
+import java.util.Optional;
+
+import org.hibernate.Hibernate;
 
 import java.util.List;
 import java.util.Optional;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import etgov.mof.pfmrt.conf.dao.UserRepository;
-import etgov.mof.pfmrt.conf.model.User;
+
 
 @Service
 
 public class MyUserService {
-	
-	  @Autowired
-	   private UserRepository myuserrepository;
-	  
+
 	  
 	  @Autowired private BCryptPasswordEncoder encoder;
 	  
@@ -30,10 +32,7 @@ public class MyUserService {
 	    	myuserrepository.save(user);
 	    }
 	    
-	    public Optional findById(Long id) {
-	    	
-	    	return myuserrepository.findById(id);
-	    }
+
 	     
 	    public void delete(Long id) {
 	    	myuserrepository.deleteById(id);
@@ -45,5 +44,26 @@ public class MyUserService {
 			
 		}
 
+
+		public User findById(Long id) {
+		       User user = findById(id);
+		       if(user!=null){
+		           Hibernate.initialize(user.getRoles());
+		       }
+		       return user;
+
+		
+		
+		
+		
+		
 	    
 		}
+
+	    
+		}
+*/
+
+	    
+		
+

@@ -1,0 +1,250 @@
+body{
+	background:#f4f4f4;
+}
+
+
+
+.container{
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 50%; 
+  height: 50%;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 40px;
+}
+
+
+
+
+
+
+.navbar{
+	min-height:33px !important;
+	margin-bottom:0;
+	border-radius:0;
+}
+.navbar-nav > li > a, .navbar-brand{
+	padding-top:6px !important;
+	padding-bottom:0 !important;
+	height:33px;
+	color:white;
+
+}
+
+/* nav bar */
+
+.navbar {
+  background-color: #333333;
+}
+.navbar .navbar-brand {
+  color: #fff;
+
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: #fff;
+}
+.navbar .navbar-text {
+  color: #ecf0f1;
+}
+.navbar .navbar-text a {
+  color: #f0e7e2;
+}
+.navbar .navbar-text a:hover,
+.navbar .navbar-text a:focus {
+  color: #f0e7e2; 
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #ecf0f1;
+  border-radius: .25rem;
+  margin: 0 0.25em;
+}
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
+  color: #f0e7e2;
+}
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+  color: #f0e7e2;
+  background-color: #0c11a1;
+}
+.navbar .navbar-toggle {
+  border-color: #0c11a1;
+}
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+  background-color: #0c11a1;
+}
+.navbar .navbar-toggle .navbar-toggler-icon {
+  color: #ecf0f1;
+}
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar .navbar-link {
+  color: #ecf0f1;
+}
+.navbar .navbar-link:hover {
+  color: #f0e7e2;
+}
+/* custom */
+.main-color-bg{
+	background-color:#e74c3c !important;
+	border-color:#c0392b !important;
+	color:#ffffff !important;
+}
+
+/* header */
+
+#header {
+	background:#333333;
+	color:#ffffff;
+	padding-bottom:10px;
+	margin-bottom:15px;
+	
+}
+
+#header .create{
+	padding-top:20px;
+}
+
+.dropdown:hover>.dropdown-menu{
+    display:block;
+    
+    }
+
+.navbar-header .fa{
+	margin-right:8px;
+}
+
+/* breadcrumb*/
+.breadcrumb{
+	background:#cccccc;
+	color:#333333;
+}
+
+.breadcrumb a {
+	color:#333333;
+}
+
+.dash-box{
+	text-align:center;
+}
+$login{
+	margin-top:30px;
+}
+
+/* Footer*/
+
+#footer{
+	background:#333333;
+	color:#ffffff;
+	text-align:center;
+	padding:10px;
+	margin-top:10px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 575px) {
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ecf0f1;
+  }
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #f0e7e2;
+  }
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #f0e7e2;
+    background-color: #0c11a1;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ecf0f1;
+  }
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #f0e7e2;
+  }
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #f0e7e2;
+    background-color: #0c11a1;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ecf0f1;
+  }
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #f0e7e2;
+  }
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #f0e7e2;
+    background-color: #0c11a1;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ecf0f1;
+  }
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #f0e7e2;
+  }
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #f0e7e2;
+    background-color: #0c11a1;
+  }
+}
+
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+  color: #ecf0f1;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+  color: #f0e7e2;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+  color: #f0e7e2;
+  background-color: #0c11a1;
+}

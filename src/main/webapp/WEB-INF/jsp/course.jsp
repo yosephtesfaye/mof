@@ -1,5 +1,5 @@
-<%@ include file="common/header.jspf"%>
-<%@ include file="common/navigation.jspf"%>
+<%@ include file="/WEB-INF/jsp/common/headers.jsp"%>
+<%@ include file="/WEB-INF/jsp/common/footers.jsp"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -11,7 +11,7 @@
  <body>
 course page
 
-<%@ include file="common/footer.jspf"%>
+<%@ include file="/WEB-INF/jsp/common/footers.jsp"%>
 </body>
 </html>
 

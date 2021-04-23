@@ -1,4 +1,4 @@
-package etgov.mof.pfmrt.conf.service;
+/*package etgov.mof.pfmrt.conf.service;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -7,7 +7,28 @@ import java.util.Set;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetai
+import net.mofed.reportracking.app.model.Role;
+import net.mofed.reportracking.app.model.User;
+
+public class MyUserDetails implements UserDetails {
+
+	private User user;
+	
+	public MyUserDetails(User user) {
+		this.user = user;
+	}
+
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		Set<Role> roles = user.getRoles();
+		List<SimpleGrantedAuthority> authorities = new ArrayList<>();
+		
+		for (Role role : roles) {
+			authorities.add(new SimpleGrantedAuthority(role.getName()));
+		}
+		
+		return authorities;
 
 import etgov.mof.pfmrt.conf.model.User;
 import etgov.mof.pfmrt.conf.model.myRole;
@@ -32,6 +53,7 @@ public class MyUserDetails implements UserDetails {
 			authorities.add(new SimpleGrantedAuthority(role.getName()));
 		}
 				return authorities;
+
 	}
 
 	@Override
@@ -67,3 +89,5 @@ public class MyUserDetails implements UserDetails {
 	
 
 }
+
+*/
