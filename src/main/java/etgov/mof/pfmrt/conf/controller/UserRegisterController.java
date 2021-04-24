@@ -1,6 +1,4 @@
-
-	
-	package etgov.mof.pfmrt.conf.controller;
+package etgov.mof.pfmrt.conf.controller;
 
 import java.security.Principal;
 import java.util.Arrays;
@@ -28,7 +26,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import etgov.mof.pfmrt.conf.dao.RoleRepository;
 import etgov.mof.pfmrt.conf.exception.CustomeFieldValidationException;
 import etgov.mof.pfmrt.conf.exception.UsernameOrIdNotFound;
-import etgov.mof.pfmrt.conf.model.ChangePasswordForm;
+import etgov.mof.pfmrt.conf.util.ChangePasswordForm;
 import etgov.mof.pfmrt.conf.model.Organization;
 import etgov.mof.pfmrt.conf.model.Role;
 import etgov.mof.pfmrt.conf.model.User;

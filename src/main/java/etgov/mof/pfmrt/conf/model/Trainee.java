@@ -24,75 +24,46 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Trainee {
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-  private Integer id;
-  
-	private String firstname;
-	private String lastname;
-	private String examscore;
-	
-	
-	public String getExamscore() {
-		return examscore;
-	}
-	public void setExamscore(String examscore) {
-		this.examscore = examscore;
-	}
-	public Date getStartdate() {
-		return startdate;
-	}
-	public void setStartdate(Date startdate) {
-		this.startdate = startdate;
-	}
-	public Date getEnddate() {
-		return enddate;
-	}
-	public void setEnddate(Date enddate) {
-		this.enddate = enddate;
-	}
-	@DateTimeFormat(pattern="yyyy-MM-dd")
-	private Date startdate;
-	
-	@DateTimeFormat(pattern="yyyy-MM-dd")
-	private Date enddate;
-	
+private String train_id;
+private Date train_start_date;
+private String middle_name;
+private String first_name;
+
 	@ManyToOne
-	@JoinColumn(name="traineecourseid",insertable=false,updatable=false)
+	@JoinColumn(name="trainee_cours_eid",insertable=false,updatable=false)
 	private Course course;
-	private Integer traineecourseid;
+	private String trainee_course_id;
 	
 	
 	@ManyToOne
-	@JoinColumn(name="traineeorgid",insertable=false,updatable =false)
+	@JoinColumn(name="trainee_org_id",insertable=false,updatable =false)
 	private Organization organization;
-	private String traineeorgid;
-	
-	
-		
-	public String getTraineeorgid() {
-		return traineeorgid;
+	private String trainee_org_id;
+	public String getTrain_id() {
+		return train_id;
 	}
-	public void setTraineeorgid(String traineeorgid) {
-		this.traineeorgid = traineeorgid;
+	public void setTrain_id(String train_id) {
+		this.train_id = train_id;
 	}
-	public Integer getId() {
-		return id;
+	public Date getTrain_start_date() {
+		return train_start_date;
 	}
-	public void setId(Integer id) {
-		this.id = id;
+	public void setTrain_start_date(Date train_start_date) {
+		this.train_start_date = train_start_date;
 	}
-	public String getFirstname() {
-		return firstname;
+	public String getMiddle_name() {
+		return middle_name;
 	}
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+	public void setMiddle_name(String middle_name) {
+		this.middle_name = middle_name;
 	}
-	public String getLastname() {
-		return lastname;
+	public String getFirst_name() {
+		return first_name;
 	}
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
+	public void setFirst_name(String first_name) {
+		this.first_name = first_name;
 	}
 	public Course getCourse() {
 		return course;
@@ -100,11 +71,29 @@ public class Trainee {
 	public void setCourse(Course course) {
 		this.course = course;
 	}
-	public Integer getTraineecourseid() {
-		return traineecourseid;
+	public String getTraineecourseid() {
+		return trainee_course_id;
 	}
-	public void setTraineecourseid(Integer traineecourseid) {
-		this.traineecourseid = traineecourseid;
+	public void setTraineecourseid(String traineecourseid) {
+		this.trainee_course_id = trainee_course_id;
 	}
+	public Organization getOrganization() {
+		return organization;
+	}
+	public void setOrganization(Organization organization) {
+		this.organization = organization;
+	}
+	public String getTrainee_org_id() {
+		return trainee_org_id;
+	}
+	public void setTrainee_org_id(String trainee_org_id) {
+		this.trainee_org_id = trainee_org_id;
+	}
+	
+	
+		
+	
+	
+	
 	
 }
