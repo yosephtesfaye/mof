@@ -20,7 +20,7 @@ public class Organization {
 	private String org_name;
 	private String email;
 	private String telephone;
-	private String status;
+	private boolean status;
 	
 	public String getOrg_id() {
 		return org_id;
@@ -46,14 +46,12 @@ public class Organization {
 	public void setTelephone(String telephone) {
 		this.telephone = telephone;
 	}
-	public String getStatus() {
+	public boolean isStatus() {
 		return status;
 	}
-	public void setStatus(String status) {
+	public void setStatus(boolean status) {
 		this.status = status;
 	}
 	
-		
-
 	
 }

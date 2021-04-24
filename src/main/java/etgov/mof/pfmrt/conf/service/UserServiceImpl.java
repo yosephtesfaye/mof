@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import etgov.mof.pfmrt.conf.dao.UserRepository;
 import etgov.mof.pfmrt.conf.exception.CustomeFieldValidationException;
 import etgov.mof.pfmrt.conf.exception.UsernameOrIdNotFound;
-import etgov.mof.pfmrt.conf.model.ChangePasswordForm;
+import etgov.mof.pfmrt.conf.util.ChangePasswordForm;
 import etgov.mof.pfmrt.conf.model.User;
 
 @Service
@@ -80,7 +80,6 @@ public class UserServiceImpl implements UserService{
 		to.setUsername(from.getUsername());
 		to.setFirstName(from.getFirstName());
 		to.setLastName(from.getLastName());
-		to.setEmail(from.getEmail());
 		to.setRoles(from.getRoles());
 	}
 

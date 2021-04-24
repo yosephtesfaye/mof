@@ -26,13 +26,13 @@ public class CourseService {
 		courseRepository.save(course);
 	}
 	
-	public Optional<Course>findById(Integer id){
-		return courseRepository.findById(id);
+	public Optional<Course>findById(String course_id){
+		return courseRepository.findById(course_id);
 	}
 	
 	
-	public void delete(Integer id) {
-		courseRepository.deleteById(id);
+	public void delete(String course_id) {
+		courseRepository.deleteById(course_id);
 	}
 
 }

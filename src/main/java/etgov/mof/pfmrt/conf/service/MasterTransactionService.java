@@ -18,16 +18,11 @@ public class MasterTransactionService {
 	
 	public List<MasterTransaction> getMasterTransaction(String keyword)
 	{
-		 if (keyword != null) {
-			return masterTransactionRepository.findByDirectorate(keyword);
-		}
-		else
+		 
 		return masterTransactionRepository.findAll();
 	}
 		
-	public List <MasterTransaction> getOrgTrans(Long  id){
-		return masterTransactionRepository.findTransactionByOrg(id);
-	}
+	
 	public Optional <MasterTransaction> findById(Long id){
 			    return  masterTransactionRepository.findById(id);
 		}
@@ -43,9 +38,6 @@ public class MasterTransactionService {
 	}
 	
 	
-	public void updateReportStatusWithCustomQuery(Integer id ,String reportstatus) {
-		masterTransactionRepository.updateReportStatus(id, reportstatus);
-	}
 	
 	public MasterTransaction get(Long id) {
 		return masterTransactionRepository.findById(id).get();

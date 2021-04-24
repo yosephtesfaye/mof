@@ -6,6 +6,6 @@ import etgov.mof.pfmrt.conf.model.Trainee;
 
 
 @Repository
-public interface TraineeRepository extends JpaRepository<Trainee, Integer> {
+public interface TraineeRepository extends JpaRepository<Trainee, String> {
 
 }

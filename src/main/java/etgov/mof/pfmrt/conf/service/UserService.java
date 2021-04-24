@@ -1,7 +1,7 @@
 package etgov.mof.pfmrt.conf.service;
 
 import etgov.mof.pfmrt.conf.exception.UsernameOrIdNotFound;
-import etgov.mof.pfmrt.conf.model.ChangePasswordForm;
+import etgov.mof.pfmrt.conf.util.ChangePasswordForm;
 import etgov.mof.pfmrt.conf.model.User;
 
 public interface UserService {

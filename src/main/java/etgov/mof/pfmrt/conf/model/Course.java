@@ -24,10 +24,8 @@ import lombok.NoArgsConstructor;
 
 public class Course {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Integer id;
-	
-	private String coursename;
+	private String course_id;
+	private String course_name;
 	private Integer hour;
 	
 	@OneToMany(mappedBy="course")
@@ -40,17 +38,19 @@ public class Course {
 	public void setCoursetrainees(List<Trainee> coursetrainees) {
 		this.coursetrainees = coursetrainees;
 	}
-	public Integer getId() {
-		return id;
+	
+	
+	public String getCourse_id() {
+		return course_id;
 	}
-	public void setId(Integer id) {
-		this.id = id;
+	public void setCourse_id(String course_id) {
+		this.course_id = course_id;
 	}
-	public String getCoursename() {
-		return coursename;
+	public String getCourse_name() {
+		return course_name;
 	}
-	public void setCoursename(String coursename) {
-		this.coursename = coursename;
+	public void setCourse_name(String course_name) {
+		this.course_name = course_name;
 	}
 	public Integer getHour() {
 		return hour;
